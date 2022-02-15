@@ -1,0 +1,215 @@
+ /* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+/*CSS Variables*/
+:root{
+    --navbar-height: 30 px;
+}
+
+/*Navigation Bar*/
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    font-family: 'Playball', cursive;
+    font-weight: 200;
+    top: 0px;
+}
+
+#navbar::before{
+    content: '';
+    background-color: black;
+   
+    position: absolute;
+    height: 100%;
+    top: 0px ;
+    left: 0px ;
+    width:100%;
+    z-index: -1;
+    opacity: 0.8 ;
+}
+
+/*Navigation Bar: Logo and Image*/
+#logo{
+    margin: 1px 3px ;
+}
+#logo img {
+    height: 70px;
+    margin : 5px 5px;
+    
+}
+/* Navigation Bar : List Styling */
+#navbar ul{
+    display: flex;
+}
+#navbar ul li{ 
+    list-style: none;
+    font-size: 1.3rem;
+}
+ 
+#navbar ul li a {
+    color : white ;
+    display: block;
+    padding: 3px 22px;
+    border-radius : 20px ;
+    text-decoration: none;
+}
+
+#navbar ul li a:hover{
+    color : rgb(10, 10, 10) ;
+    background-color: rgb(252, 250, 250) ;
+}
+/* Home Section*/
+#home{
+    display: flex;
+    flex-direction: column ;
+    padding: 3px 200px;
+    height: 470px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{ 
+     content: '';
+    background:url('../bg1.jpg') no-repeat center center/cover;
+    position: absolute;
+    height: 70%;
+    top: 0px ;
+    left: 0px ;
+    width:100%;
+    z-index: -1;
+    opacity: 0.45;     
+}
+#home h1{
+    color: black;
+    text-align: center;
+    font-family: 'Playball', cursive;
+}
+#home p{
+    color:black;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Playball', cursive;
+}
+/* Services Section*/
+#services{
+    margin: 14px;
+    display: flex; 
+}
+
+.box{
+    border: 2px solid brown;
+    padding:34px;
+    margin: 3px 6px;
+    border-radius: 28px;
+    background: #f2f2f2;
+    font-family: 'Playball', cursive;
+}
+
+
+.box img{
+    height: 230px;
+    margin: auto;
+    display: block;
+    
+}
+/*box p{}*/
+/* client section*/
+#client-section{
+    position: relative;
+}
+
+#client-section::before{
+    content:"";
+    position: absolute;
+    background: url('../bg5.jpg');
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.45;
+
+} 
+#clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.client-item{
+    padding: 12px;
+}
+
+#clients img{
+    height:100px;
+    margin: 2px;
+}
+/*Contact Section*/
+#contact{
+    position: relative;    
+}
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.4;
+    z-index: -1;
+    background:url("../contact.jpg")no-repeat center center/cover  ;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+}
+
+#contact-box from{
+    width: 80%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Playball', cursive
+
+}
+
+footer{
+    background: black;
+    color: white;
+    padding: 9px 20px; 
+}
+/*Utility Classes */
+.h-primary{
+    font-size: 3.8rem;
+    padding:12px;
+    font-family: 'Playball', cursive;
+}
+.h-secondary{
+    font-size: 2.8rem;
+    padding:12px;
+}
+
+.btn{
+    padding: 6px 20px;
+    border: 2px solid black;
+    background-color: rgb(241, 126, 126);
+    color: rgb(8, 8, 8);
+    margin: 17px;
+    font-size: 1.2 rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.center{
+    text-align: center ;
+}
